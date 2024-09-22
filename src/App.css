@@ -1,0 +1,104 @@
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #000000, #608283); /* Gradient colors */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  background-color: rgb(138 130 130 / 90%); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Title */
+h2 {
+  color: #010101;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+input {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 5px 10px;
+  background-color: #111711;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Button container */
+.button-container {
+  display: flex; /* Use flexbox for button alignment */
+  gap: 10px; /* Space between buttons */
+}
+
+button:hover {
+  background-color: #8f998f;
+}
+
+/* Todo Item */
+.todo-item {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item span {
+  font-size: 16px;
+}
+
+.todo-item button {
+  margin-left: 10px; /* Adds space between buttons */
+}
+
+/* Buttons inside Todo Item */
+.todo-item div {
+  display: flex; /* Use flexbox to align buttons */
+  gap: 10px; /* Space between buttons */
+}
+
+
+/* Content area */
+.todo-content {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Take full width */
+}
+
+/* Fixed width for text */
+.todo-text {
+  flex: 1; /* Allow the text to grow */
+  min-width: 150px; /* Set a minimum width */
+  max-width: 300px; /* Set a maximum width */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  white-space: nowrap; /* Prevent text wrapping */
+}
